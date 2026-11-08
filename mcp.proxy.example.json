@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "rea": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/rea-key-demo/pipeline/rea_redact_proxy.mjs"],
+      "env": {
+        "SECRETS_FILE": "/ABSOLUTE/PATH/OUTSIDE/THE/REPO/secrets.json",
+        "REA_BACKEND_CMD": "[\"npx\",\"-y\",\"rea-agents@6.8.0\",\"mcp\"]",
+        "GHIDRA_INSTALL_DIR": "/ABSOLUTE/PATH/TO/ghidra_12.1.4_PUBLIC",
+        "JAVA_HOME": "/ABSOLUTE/PATH/TO/jdk-21",
+        "PROXY_LOG": "/ABSOLUTE/PATH/TO/rea-key-demo/out/proxy.log"
+      }
+    }
+  }
+}
